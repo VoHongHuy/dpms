@@ -1,0 +1,19 @@
+@import './variables.scss';
+@import './select.scss';
+@import './map.scss';
+@import './react-tabs.scss';
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: $font-regular;
+}
+
+.DraftEditor-root {
+  height: 100%;
+}

@@ -1,0 +1,32 @@
+@import '@/styles/variables';
+
+.container {
+  box-sizing: border-box;
+  position: relative;
+  padding: 5px;
+  margin-bottom: 1px;
+  .progress {
+    box-sizing: border-box;
+    border: 1px solid $border-blue;
+    background-color: $background-blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+  }
+  .text {
+    position: relative;
+    z-index: 1000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &.primary {
+    .progress {
+      opacity: 1;
+    }
+  }
+}

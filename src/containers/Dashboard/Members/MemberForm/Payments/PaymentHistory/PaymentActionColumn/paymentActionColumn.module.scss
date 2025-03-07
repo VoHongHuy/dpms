@@ -1,0 +1,21 @@
+@import '@/styles/placeholders';
+@import '@/styles/variables';
+
+
+.receivedAction {
+  @include action;
+  display: block;
+  color: $text-green
+}
+
+.refundedAction {
+  @include action;
+  display: block;
+  color: $text-yellow
+}
+
+.removedAction {
+  @include action;
+  display: block;
+  color: $text-red
+}

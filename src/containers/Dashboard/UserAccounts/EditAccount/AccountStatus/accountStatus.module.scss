@@ -1,0 +1,9 @@
+@import '@/styles/functions';
+
+.container {
+  user-select: none;
+  margin-bottom: rem(30);
+  display: inline-flex;
+  flex-direction: column;
+
+}

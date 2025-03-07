@@ -1,0 +1,19 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.actionsGroup {
+  margin-top: rem(16);
+
+  .action {
+    font-size: rem(14);
+    line-height: rem(18);
+    color: $text-blue;
+    text-decoration: underline;
+    user-select: none;
+    cursor: pointer;
+
+    &:last-child {
+      margin-left: rem(18);
+    }
+  }
+}

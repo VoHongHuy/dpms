@@ -1,0 +1,26 @@
+@import '@/styles/functions';
+
+.nav {
+  margin-bottom: rem(10);
+  .tools {
+    float: right;
+  }
+}
+
+.map {
+  flex: 1 1 0;
+}
+
+.settlement {
+  flex: 1 1 0;
+  overflow: auto;
+  margin-bottom: rem(15);
+
+  &.noMarginBottom {
+    margin-bottom: 0;
+  }
+}
+
+.district {
+  margin-top: rem(15);
+}

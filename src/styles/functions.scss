@@ -1,0 +1,5 @@
+$HTML_BASE_SIZE: 16;
+
+@function rem($size) {
+  @return $size / 16 * 1rem;
+}

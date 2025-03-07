@@ -1,0 +1,47 @@
+@import '@/styles/variables.scss';
+
+%paymentNumber {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+  border-left: 1px solid black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+
+  .contents {
+    display: contents;
+    text-align: center;
+
+    .paymentYear {
+      text-align: right;
+      font-weight: bold;
+    }
+
+    .received {
+      @extend %paymentNumber;
+      color: $text-green;
+    }
+
+    .refunded {
+      @extend %paymentNumber;
+      color: $text-yellow;
+    }
+
+    .removed {
+      @extend %paymentNumber;
+      color: $text-red;
+    }
+
+    .totalByYear {
+      margin-left: 10px;
+    }
+  }
+
+  .divider {
+    border-bottom: 1px solid black;
+    margin: 5px 0 10px 0;
+  }
+}

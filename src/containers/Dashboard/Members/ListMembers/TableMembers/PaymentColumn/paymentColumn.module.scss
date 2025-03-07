@@ -1,0 +1,17 @@
+@import '@/styles/variables.scss';
+
+.tooltipContainer {
+  border-color: grey;
+}
+
+.memberNotPay {
+  color: $text-red;
+}
+
+.memberPartialPay {
+  color: $text-yellow;
+}
+
+.memberFullyPay {
+  color: $text-green;
+}

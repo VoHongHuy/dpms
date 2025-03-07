@@ -1,0 +1,40 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.container {
+  width: 100%;
+
+  .content {
+    width: 100%;
+    margin-bottom: rem(20);
+    border-collapse: collapse;
+
+    .input {
+      margin: rem(2) 0;
+    }
+
+    thead {
+      tr {
+        th {
+          background-color: $background-gray-89;
+          text-align: left;
+          width: 50%;
+          padding: rem(15);
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          &.title {
+            text-align: left;
+            padding: 0 rem(15);
+          }
+        }
+
+        border-bottom: rem(1) solid $border-gray-89;
+      }
+    }
+  }
+}

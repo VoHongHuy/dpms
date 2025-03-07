@@ -1,0 +1,21 @@
+@import '@/styles/variables';
+
+.default {
+  color: $text-green;
+
+  &.disableLink {
+    cursor: default;
+    pointer-events: none;
+    text-decoration: none;
+    color: $text-gray-8d;
+  }
+}
+
+.tooltip {
+  pointer-events: auto !important;
+
+  &:hover {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}

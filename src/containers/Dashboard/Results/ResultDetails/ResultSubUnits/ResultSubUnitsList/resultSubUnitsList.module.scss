@@ -1,0 +1,30 @@
+@import '@/styles/variables';
+
+.container {
+  .item {
+    border-bottom: 1px solid $border-gray-e0;
+    padding: 5px 0;
+
+    .header {
+      font-weight: $font-semi-bold;
+      margin-bottom: 5px;
+    }
+    .content {
+      display: flex;
+      align-items: stretch;
+
+      .notes, .subUnitNotes {
+        flex-grow: 1;
+      }
+
+      .actions {
+        flex-grow: 8;
+        text-align: right;
+
+        a {
+          color: $text-blue;
+        }
+      }
+    }
+  }
+}

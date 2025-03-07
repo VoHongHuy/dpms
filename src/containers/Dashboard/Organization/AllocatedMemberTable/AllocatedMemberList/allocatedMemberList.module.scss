@@ -1,0 +1,19 @@
+.container {
+  padding-bottom: 10px;
+  .heading {
+    margin-bottom: 5px;
+  }
+  .content {
+    padding: 0 5px;
+
+    .message {
+      border: 2px dashed #ddd;
+      padding: 5px;
+    }
+  }
+
+  .paginationContainer {
+    text-align: center;
+    padding: 10px 0;
+  }
+}

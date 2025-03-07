@@ -1,0 +1,72 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+@import '@/styles/placeholders';
+
+.container {
+  position: relative;
+  height: rem(200);
+
+  .input {
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    padding: rem(15) rem(42) rem(15) rem(17);
+    color: $text-black;
+    font-size: rem(14);
+    line-height: rem(18);
+    height: 100%;
+    font-family: inherit;
+    border-bottom: 1px solid $border-light-gray;
+    background-color: $background-gray-f3;
+    @include truncate;
+    overflow-y: auto;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+
+    &[type='number'] {
+      -moz-appearance: textfield;
+    }
+
+    &.error {
+      border-bottom-color: #fa4d55;
+    }
+
+    &::placeholder {
+      color: $text-gray-8d;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:read-only,
+    &:disabled {
+      cursor: default;
+      color: $text-black;
+    }
+
+    // transparent autofill background color
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      -webkit-box-shadow: 0 0 0px 1000px $background-gray-f3 inset;
+    }
+    // hide X button on IE
+    &::-ms-clear {
+      display: none;
+    }
+  }
+
+  & [class^='icon-'] {
+    position: absolute;
+    top: 50%;
+    right: rem(17);
+    color: $text-black;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}

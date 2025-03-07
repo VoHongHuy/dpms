@@ -1,0 +1,12 @@
+# Node modules
+/node_modules
+
+# Build products
+/build
+/coverage
+/config
+/public
+
+# Specify files
+styleguide.config.js
+src/serviceWorker.js

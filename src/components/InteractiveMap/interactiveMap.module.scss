@@ -1,0 +1,28 @@
+.popupContent {
+  .popupHeader {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .popupBody {
+    margin-bottom: 5px;
+    line-height: 20px;
+  }
+
+  .popupFooter {
+    text-align: right;
+  }
+}
+
+.cluster {
+  display: none;
+}
+
+.marker {
+  font-weight: bold;
+  display: flex;
+  margin: auto;
+  align-items:center;
+  justify-content:center;
+  text-align: center;
+}

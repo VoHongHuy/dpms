@@ -1,0 +1,20 @@
+.nav {
+  margin-bottom: 10px;
+  .tools {
+    float: right;
+  }
+}
+
+.map {
+  flex: 1 1 0;
+}
+
+.pollingStations {
+  flex: 1 1 0;
+  overflow: auto;
+  margin-bottom: 15px;
+
+  &.noMarginBottom {
+    margin-bottom: 0;
+  }
+}

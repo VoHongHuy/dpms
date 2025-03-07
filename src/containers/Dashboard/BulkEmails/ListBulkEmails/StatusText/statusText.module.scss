@@ -1,0 +1,19 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.container {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .statusText {
+    float: left;
+    padding-right: rem(18);
+  }
+
+  .textBold {
+    font-weight: $font-semi-bold;
+  }
+}

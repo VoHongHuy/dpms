@@ -1,0 +1,22 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.container {
+  display: flex;
+  
+  [class^='icon-'] {
+    font-size: rem(16);
+
+    &.info {
+      color: #005aab;
+    }
+
+    &.success {
+      color: #24a047;
+    }
+
+    &.error {
+      color: #fa4d55;
+    }
+  }
+}

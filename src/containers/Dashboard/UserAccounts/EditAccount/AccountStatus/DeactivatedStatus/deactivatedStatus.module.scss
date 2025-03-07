@@ -1,0 +1,27 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.status {
+  font-size: rem(16);
+  line-height: rem(20);
+  color: $text-red;
+  margin-top: 0;
+  margin-bottom: rem(10);
+}
+
+.actionWrapper {
+  font-size: rem(14);
+  line-height: rem(18);
+  color: $text-blue;
+  margin-top: 0;
+  margin-bottom: rem(8);
+  text-decoration: underline;
+
+  .action {
+    cursor: pointer;
+
+    &.fetching {
+      cursor: progress;
+    }
+  }
+}

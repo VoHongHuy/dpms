@@ -1,0 +1,15 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.container {
+  margin-bottom: rem(32);
+
+  .title {
+    user-select: none;
+    font-size: rem(16);
+    line-height: rem(20);
+    margin-top: 0;
+    margin-bottom: rem(18);
+    font-weight: $font-semi-bold;
+  }
+}

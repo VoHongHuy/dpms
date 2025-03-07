@@ -1,0 +1,11 @@
+@import '@/styles/functions';
+
+.formSection {
+  max-width: rem(1173);
+  margin-bottom: rem(20);
+
+  .input {
+    max-width: 100%;
+    margin-bottom: rem(10);
+  }
+}

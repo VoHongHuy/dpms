@@ -1,0 +1,24 @@
+/* Style the list */
+.breadcrumb {
+  display: inline-block;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+
+  /* Display list items side by side */
+  li {
+    display: inline;
+
+    a {
+      text-decoration: none;
+      color: rgba(0,0,0,0.87);
+      text-decoration: underline;
+    }
+  }
+
+  li+li:before {
+    padding: 4px;
+    color: black;
+    content: ">";
+  }
+}

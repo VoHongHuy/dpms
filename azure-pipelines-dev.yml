@@ -1,0 +1,41 @@
+# Node.js with React
+# Build a Node.js project that uses React.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+  branches:
+    include:
+      - dev
+  paths:
+    include:
+      - 'frontend'
+
+pool: 
+  name: 'Private-Windows'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: 'frontend'
+  displayName: 'npm install'
+
+- task: Npm@1
+  inputs:
+    command: 'custom'
+    workingDir: 'frontend'
+    customCommand: 'run build'
+  displayName: 'npm run build'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: 'frontend/build/'
+    artifact: 'management-ui'
+    publishLocation: 'pipeline'
+

@@ -1,0 +1,56 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+@import '@/styles/placeholders';
+
+.container {
+  @include stickContainer;
+  height: 100%;
+  box-sizing: border-box;
+
+  .navbar {
+    padding: 10px;
+  }
+
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .content {
+    @include overflowContent;
+
+    .leftSide {
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 0 10px 0 10px;
+    }
+
+    .rightSide {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 10px 0 10px;
+      overflow: auto;
+    }
+
+    @media (min-width: #{$min-xxl}) {
+      .leftSide {
+        float: left;
+        width: 50%;
+      }
+  
+      .rightSide {
+        display: flex;
+        flex-flow: column;
+        float: right;
+        width: 50%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+

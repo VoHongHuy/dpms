@@ -1,0 +1,43 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+@import '@/styles/placeholders';
+
+.container {
+  height: 100vh;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  flex: none;
+  background-color: $background-blue;
+  color: #fff;
+  -ms-overflow-style: none; // hide scroll bar on IE
+  display: flex;
+  flex-direction: column;
+
+  &::-webkit-scrollbar {
+    display: none;
+  } // hide scroll bar
+
+  .itemToggleNavbar {
+    background-color: $background-dark-blue;
+  }
+
+  .userName {
+    margin: 0;
+    font-size: rem(14);
+    font-weight: $font-bold;
+    @include truncate;
+  }
+
+  .userEmail {
+    font-size: rem(12);
+    @include truncate;
+  }
+
+  .topItems {
+    flex: 1 1 auto;
+  }
+
+  .bottomItems {
+  }
+}

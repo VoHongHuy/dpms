@@ -1,0 +1,13 @@
+@import '@/styles/variables';
+
+.received {
+  color: $text-green;
+}
+
+.refunded {
+  color: $text-yellow;
+}
+
+.removed {
+  color: $text-red;
+}

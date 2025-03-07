@@ -1,0 +1,15 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.label {
+  margin-top: 0;
+  margin-bottom: rem(10);
+  font-size: rem(12);
+  line-height: rem(15);
+  color: $text-gray-52;
+  user-select: none;
+
+  &.required::after {
+    content: ' *';
+  }
+}

@@ -1,0 +1,12 @@
+@import '@/styles/placeholders';
+
+.container {
+  @include stickContainer;
+  .generalResult {
+    margin-bottom: 15px;
+  }
+
+  .chartResult {
+    @include overflowContent;
+  }
+}

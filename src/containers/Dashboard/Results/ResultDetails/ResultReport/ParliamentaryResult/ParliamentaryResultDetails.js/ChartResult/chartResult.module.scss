@@ -1,0 +1,46 @@
+@import '@/styles/variables';
+@import '@/styles/placeholders';
+
+.container {
+  @include stickContainer;
+  .heading {
+    font-weight: $font-semi-bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $border-gray-e0;
+    margin-bottom: 10px;
+  }
+  .accordions {
+    @include overflowContent;
+    .accordion {
+      box-sizing: border-box;
+      background-color: $background-gray-e0;
+      text-transform: uppercase;
+      color: $text-white;
+      font-weight: $font-bold;
+      text-shadow: -1px 1px 0 $text-black,
+                    1px 1px 0 $text-black,
+                    1px -1px 0 $text-black,
+                    -1px -1px 0 $text-black;
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .header {
+        cursor: pointer;
+        span {
+          margin-left: 10px;
+        }
+      }
+
+      .body {
+        .collapse {
+          span {
+            margin-left: 25px;
+          }
+        }
+      }
+    }
+  }
+}

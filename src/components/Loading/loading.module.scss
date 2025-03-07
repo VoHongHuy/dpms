@@ -1,0 +1,16 @@
+@import '@/styles/functions';
+
+.container {
+  width: rem(150);
+  height: rem(150);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .loader {
+    width: 100%;
+    max-width: rem(150);
+    max-height: rem(150);
+  }
+}

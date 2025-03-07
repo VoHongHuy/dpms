@@ -1,0 +1,19 @@
+@import '@/styles/variables';
+
+.action {
+  color: $text-blue;
+  cursor: pointer;
+  text-decoration: underline;
+
+  &:focus {
+    color: $text-gray-52;
+  }
+
+  &:active {
+    color: $text-gray-52;
+  }
+
+  &:visited {
+    color: $text-gray-52;
+  }
+}

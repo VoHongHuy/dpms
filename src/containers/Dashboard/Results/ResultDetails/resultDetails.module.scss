@@ -1,0 +1,6 @@
+@import '@/styles/placeholders';
+
+.container {
+  @include stickContainer;
+  width: 100%;
+}

@@ -1,0 +1,42 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.container {
+  position: relative;
+  
+  &.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  .select {
+    &.error {
+      border-bottom-color: #fa4d55;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    &:disabled {
+      cursor: default;
+      color: $text-gray-8d;
+
+      &.hasValue {
+        color: $text-gray-8d;
+      }
+    }
+
+    &.hasValue {
+      color: $text-black;
+    }
+  }
+}
+
+.autoOverflow {
+  overflow: visible;
+}

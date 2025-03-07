@@ -1,0 +1,21 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+@import '@/styles/placeholders';
+
+.container {
+  @include stickContainer;
+
+  .content {
+    @include overflowContent;
+    padding: rem(30) rem(18) rem(18);
+    
+    .error {
+      font-size: rem(12);
+      line-height: rem(15);
+      color: $text-red;
+      margin-top: rem(10);
+      margin-bottom: 0;
+      user-select: none;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.container {
+  flex-grow : 1;
+  overflow-y: auto;
+  background-color: #f3f3f3;
+
+  .heading {
+    background-color: #e0e0e0;
+    padding: 15px;
+    font-weight: 700;
+  }
+
+  .items {
+    .item {
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      &.active {
+        font-weight: 600;
+        .controls {
+          text-transform: uppercase;
+        }
+      }
+
+      border-bottom: 1px solid #e0e0e0;
+      padding: 15px;
+
+      .name {
+        float: left;
+      }
+
+      .controls {
+        &::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        .control {
+          float: right;
+          a {
+            color: #005aab;
+          }
+        }
+      }
+    }
+  }
+}

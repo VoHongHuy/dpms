@@ -1,0 +1,17 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.action {
+  color: $text-blue;
+  cursor: pointer;
+  text-decoration: underline;
+  white-space: nowrap;
+
+  & + .action {
+    margin-left: rem(10);
+  }
+
+  &.fetching {
+    cursor: progress;
+  }
+}

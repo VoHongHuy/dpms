@@ -1,0 +1,15 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.container {
+  position: absolute;
+  top: rem(6);
+  display: flex;
+  right: rem(6);
+
+  .icon {
+    cursor: pointer;
+    color: $text-red;
+    font-size: rem(15);
+  }
+}

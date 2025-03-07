@@ -1,0 +1,16 @@
+@import '@/styles/variables';
+
+.container {
+  a {
+    color: $text-blue;
+    margin: 0 2px;
+  }
+
+  .isDisabled {
+    color: currentColor;
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.5;
+    text-decoration: none;
+  }
+}

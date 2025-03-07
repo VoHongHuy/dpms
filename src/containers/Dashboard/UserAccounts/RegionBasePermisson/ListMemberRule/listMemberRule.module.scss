@@ -1,0 +1,68 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.container {
+  overflow-x: auto;
+
+  .listMemberRule {
+    max-height: 300px;
+    min-height: 200px;
+    background-color: $background-gray-f3;
+    overflow-y: auto;
+    min-width: 700px;
+    position: relative;
+
+    .message {
+      position: absolute;
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .item {
+      display: flex;
+      border-bottom: 1px solid $border-light-gray ;
+  
+      & > div {
+        box-sizing: border-box;
+        width: 192px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 10px;
+        cursor: move;
+
+        &.order {
+          width: 50px;
+        }
+
+        &.country {
+          width: 142px;
+        }
+
+        &.allow {
+          color: $text-green;
+        }
+
+        &.disallow {
+          color: $text-red;
+        }
+
+        &.actions {
+          width: 88px;
+          a {
+            color: $text-red;
+          }
+        }
+
+        @media (max-width: #{$max-lg}) {
+           &.actions {
+            width: 192px;
+          }
+        }
+      }
+    }
+  }
+}

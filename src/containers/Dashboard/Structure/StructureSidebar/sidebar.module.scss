@@ -1,0 +1,21 @@
+.orgUnitCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 6px 8px;
+  margin: 0 0 10px 0;
+
+  font-weight: 600;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  
+  cursor: move;
+}
+
+.memberTitle {
+  font-weight: 600;
+}
+
+.infiniteScroll {
+  height: calc(100vh - 300px);
+}

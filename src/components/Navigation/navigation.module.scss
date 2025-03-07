@@ -1,0 +1,29 @@
+@import '@/styles/variables';
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    padding: 0 3px;
+
+    &:first-child {
+      padding: 0;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px;
+      font-weight: $font-semi-bold;
+      border-bottom: 2px solid $border-light-gray;
+      color: $text-black;
+
+      &.selected {
+        border-bottom: 2px solid $border-blue !important;
+      }
+    }
+  }
+}

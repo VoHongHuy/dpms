@@ -1,0 +1,26 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.container {
+  flex: none;
+  font-size: rem(20);
+  line-height: rem(27);
+  color: $text-black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: rem(64);
+  background-color: $background-gray-f7;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  padding-left: rem(18);
+  padding-right: rem(18);
+  user-select: none;
+
+  .actions {
+    display: flex;
+  }
+
+  .actionBtn + .actionBtn {
+    margin-left: rem(18);
+  }
+}

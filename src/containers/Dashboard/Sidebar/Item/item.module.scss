@@ -1,0 +1,41 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+@import '@/styles/placeholders';
+
+.container {
+  cursor: pointer;
+  user-select: none;
+  padding: rem(9.5) rem(20);
+  display: flex;
+  align-items: center;
+  height: rem(45);
+
+  &.active {
+    background-color: $background-light-blue;
+  }
+
+  &.expand .label {
+    max-width: rem(150);
+    margin-left: rem(32);
+  }
+
+  .icon {
+    color: $text-white;
+    width: rem(24);
+    font-size: rem(18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .label {
+    max-width: 0;
+    margin-left: 0;
+    display: block;
+    font-size: rem(14);
+    white-space: nowrap;
+    transition: max-width 0.3s linear, margin-left 0.3s linear;
+    @include truncate;
+  }
+}

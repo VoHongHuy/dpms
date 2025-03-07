@@ -1,0 +1,27 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.welcome {
+  width: 100%;
+  text-align: center;
+  color: $text-black;
+  height: calc(100% - #{rem(64)});
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .title {
+    font-size: rem(42);
+    line-height: rem(55);
+    margin-top: 0;
+    margin-bottom: rem(34);
+    font-weight: $font-light;
+  }
+
+  .description {
+    font-size: rem(16);
+    line-height: rem(20);
+    margin: 0;
+  }
+}

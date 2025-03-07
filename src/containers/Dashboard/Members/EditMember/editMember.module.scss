@@ -1,0 +1,22 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+@import '@/styles/placeholders';
+
+.container {
+  @include stickContainer;
+
+  .deleteAction {
+    cursor: pointer;
+    font-size: rem(14);
+    line-height: rem(18);
+    white-space: nowrap;
+    color: $text-red;
+    margin-left: rem(15);
+    text-decoration: underline;
+  }
+
+  .content {
+    @include overflowContent;
+    padding: rem(30) rem(18) rem(18);
+  }
+}

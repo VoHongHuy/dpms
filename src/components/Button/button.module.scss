@@ -1,0 +1,64 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.container {
+  font-size: rem(14);
+  font-weight: $font-regular;
+  padding: 0 rem(18);
+  color: $text-white;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  flex: none;
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+  height: rem(40);
+
+  &.primary {
+    background-color: $background-blue;
+  }
+
+  &.secondary {
+    background-color: $background-red;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:not(:disabled):active {
+    outline: none;
+    transform: scale(0.95);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &:not(:disabled):hover {
+    color: $text-white;
+    opacity: 0.8;
+  }
+
+  .loadingIcon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: rem(10);
+    animation: spin 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(-50%) rotate(0);
+  }
+  100% {
+    transform: translateY(-50%) rotate(360deg);
+  }
+}

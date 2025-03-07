@@ -1,0 +1,15 @@
+@import '@/styles/variables';
+
+.mail_delivered {
+    color: $text-green;
+    cursor: pointer;
+}
+  
+.mail_failed {
+    color: $text-red;
+    cursor: pointer;
+}
+  
+.mail_delivered:hover, .mail_failed:hover {
+    text-decoration: underline;
+}

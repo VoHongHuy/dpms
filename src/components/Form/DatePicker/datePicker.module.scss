@@ -1,0 +1,54 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.container {
+  [class='react-datepicker-wrapper'] {
+    display: block;
+  }
+
+  .datepicker {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    padding-left: rem(17);
+    padding-right: rem(42);
+    color: $text-black;
+    font-size: rem(14);
+    line-height: rem(18);
+    height: rem(39);
+    font-family: inherit;
+    border-bottom: 1px solid $border-light-gray;
+    background-color: $background-gray-f3;
+
+    &.error {
+      border-bottom-color: #fa4d55;
+    }
+
+    &::placeholder {
+      color: $text-gray-8d;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:read-only,
+    &:disabled {
+      cursor: default;
+      color: $text-gray-8d;
+    }
+
+    // transparent autofill background color
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      -webkit-box-shadow: 0 0 0px 1000px $background-gray-f3 inset;
+    }
+    // hide X button on IE
+    &::-ms-clear {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.subTitle {
+  font-size: rem(12);
+  line-height: rem(15);
+  color: $text-gray-6e;
+  margin-top: 0;
+  margin-bottom: rem(18);
+}
+
+.title {
+  font-size: rem(16);
+  line-height: rem(20);
+  color: $text-black;
+  font-weight: $font-semi-bold;
+  margin-top: 0;
+  margin-bottom: rem(10);
+}

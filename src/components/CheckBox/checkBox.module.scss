@@ -1,0 +1,88 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.container {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: rem(50);
+  max-width: 100%;
+  margin-bottom: rem(15);
+
+  .input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+  }
+
+  .label {
+    position: relative;
+    cursor: pointer;
+    color: $text-black;
+    user-select: none;
+    font-size: rem(14);
+
+    &.red {
+      color: $text-red;
+    }
+
+    &:before {
+      content: '';
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: 1px solid $border-black;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+        inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+      padding: rem(6.5);
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      border-radius: 2px;
+      cursor: pointer;
+      margin-right: rem(12);
+      margin-top: rem(-1);
+    }
+  }
+
+  .input:disabled + .label {
+    cursor: default;
+    color: $text-gray-8d;
+
+    &:before {
+      cursor: default;
+      border-color: $text-gray-8d;
+    }
+  }
+
+  .input:checked + .label {
+    color: $text-gray-89;
+
+    &:before {
+      background-color: $background-green;
+      border-color: $border-green;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: rem(4);
+      left: rem(5.5);
+      width: rem(3);
+      height: rem(8);
+      border: solid #fff;
+      border-width: 0 rem(1.5) rem(1.5) 0;
+      transform: rotate(45deg);
+    }
+  }
+
+  .input:disabled:checked + .label {
+    &:before {
+      background-color: $background-gray-89;
+      border-color: $border-gray-89;
+    }
+  }
+}

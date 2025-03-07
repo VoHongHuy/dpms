@@ -1,0 +1,31 @@
+/* Style the list */
+.pagination {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  padding-bottom: 10px;
+
+  .active {
+    a {
+      padding-bottom: 5px;
+      border-bottom: 4px solid #005aab;
+    }
+  }
+
+  .item {
+    display: inline;
+    padding-bottom: 5px;
+
+    a {
+      text-decoration: none;
+      color: rgba(0,0,0,0.87);
+      text-decoration: none;
+    }
+  }
+
+  li+li:before {
+    padding: 10px;
+    color: black;
+    content: "";
+  }
+}

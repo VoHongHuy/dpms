@@ -1,0 +1,14 @@
+@import '@/styles/placeholders';
+
+.container {
+  @include stickContainer;
+
+  .title {
+    position: relative;
+    z-index: 1;
+  }
+
+  .content {
+    @include overflowContent;
+  }
+}

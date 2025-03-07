@@ -1,0 +1,39 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+
+  .content {
+    padding: rem(68) rem(15) 0;
+    color: $text-black;
+    text-align: center;
+    user-select: none;
+
+    .title {
+      font-weight: $font-light;
+      font-size: rem(42);
+      text-align: center;
+      margin-bottom: rem(31);
+      margin-top: 0;
+      line-height: rem(55);
+    }
+
+    .description {
+      font-size: rem(16);
+      margin-bottom: rem(31);
+      margin-top: 0;
+      line-height: rem(20);
+    }
+
+    .button {
+      display: flex;
+      max-width: rem(264);
+      margin: auto;
+    }
+  }
+}

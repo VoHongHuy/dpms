@@ -1,0 +1,11 @@
+@import '@/styles/variables';
+
+.active {
+  color: $text-green;
+}
+.deactivated {
+  color: $text-red;
+}
+.awaiting {
+  color: $text-yellow;
+}

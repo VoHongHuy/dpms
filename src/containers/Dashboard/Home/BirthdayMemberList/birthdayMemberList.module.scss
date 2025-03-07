@@ -1,0 +1,30 @@
+@import '@/styles/variables';
+
+.container {
+  text-align: center;
+  .header {
+    font-weight: $font-semi-bold;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .body {
+    max-height: 300px;
+    overflow: auto;
+    .member {
+      margin-bottom: 5px;
+      .birthdayIcon {
+        color: $text-yellow;
+      }
+
+      .age {
+        font-weight: $font-semi-bold;
+        margin: 0 5px;
+      }
+
+      a {
+        color: $text-blue;
+      }
+    }
+  }
+}

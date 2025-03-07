@@ -1,0 +1,28 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.custom-select-container {
+  .custom-select__control {
+    border: none;
+    border-radius: 0;
+    color: $text-gray-8d;
+    font-size: rem(14);
+    cursor: pointer;
+    line-height: rem(18);
+    font-family: inherit;
+    border-bottom: 1px solid $border-light-gray;
+    background-color: $background-gray-f3;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    .custom-select__multi-value {
+      border: 1px solid #8d8d8d;
+    }
+
+    &.custom-select__control--menu-is-open {
+      .custom-select__single-value {
+        color: $text-gray-8d;
+      }
+    }
+  }
+}

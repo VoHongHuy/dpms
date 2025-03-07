@@ -1,0 +1,38 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.iconColumnWrapper {
+  position: relative;
+  cursor: pointer;
+
+  &:hover > .tooltip {
+    display: block;
+  }
+
+  .tooltip {
+    width: rem(120);
+    height: rem(70);
+    overflow: auto;
+    border-radius: rem(4);
+    margin: 0;
+    padding: rem(5);
+    border: 1px solid $border-gray-89;
+    background-color: $background-gray-e0;
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: rem(-132);
+    z-index: 10;
+    transform: translateY(-50%);
+
+    &:hover {
+      display: block;
+    }
+
+    &.documents {
+      width: rem(200);
+      right: rem(-215);
+      height: rem(100);
+    }
+  }
+}

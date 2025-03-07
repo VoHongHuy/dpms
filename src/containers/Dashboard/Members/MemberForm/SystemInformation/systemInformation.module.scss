@@ -1,0 +1,16 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.button {
+  background-color: $background-red-fa;
+}
+
+.text {
+  color: $text-gray-52;
+  font-size: rem(13);
+  user-select: none;
+}
+
+.allocated {
+  margin: rem(16) 0;
+}

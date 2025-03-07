@@ -1,0 +1,54 @@
+.container {
+  flex-grow : 1;
+  overflow-y: auto;
+  background-color: #f3f3f3;
+
+  .textBlue {
+    color: #005aab;
+  }
+
+  .active {
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .pollingStationTable {
+    border-collapse: collapse;
+    border: none;
+    width: 100%;
+
+    thead {
+      background-color: #e0e0e0;
+      font-weight: 700;
+      text-align: left;
+
+      tr {
+        th {
+          padding: 15px;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        border-bottom: 1px solid #e0e0e0;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        td {
+          padding: 10px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          max-width: 150px;
+        }
+      }
+    }
+  }
+}

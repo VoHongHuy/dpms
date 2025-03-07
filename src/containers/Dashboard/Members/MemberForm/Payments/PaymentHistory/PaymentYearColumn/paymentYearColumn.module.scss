@@ -1,0 +1,16 @@
+@import '@/styles/placeholders';
+
+
+.action {
+  @include action;
+}
+
+.modal {
+  > div > div:first-child {
+  flex-direction: column;
+  }
+
+  .modalTitle {
+    margin-bottom: 10px;
+  }
+}

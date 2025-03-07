@@ -1,0 +1,15 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+@import '@/styles/placeholders';
+
+.container {
+  margin-bottom: rem(16);
+  display: block;
+  max-width: rem(380);
+  overflow: hidden;
+  min-width: rem(40);
+
+  .content {
+    position: relative;
+  }
+}

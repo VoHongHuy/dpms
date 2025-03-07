@@ -1,0 +1,38 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.container {
+  & [class~='rdt_TableHeadRow'] {
+    min-height: rem(48);
+    background-color: $background-gray-e0;
+  }
+
+  & [class~='rdt_TableCol_Sortable'] {
+    color: $text-black;
+    font-weight: $font-semi-bold;
+
+    &:hover {
+      color: $text-black;
+    }
+  }
+
+  & [class~='rdt_TableRow'] {
+    &:not(:last-of-type),
+    &:hover:not(:last-of-type) {
+      outline: none;
+      border-bottom-color: $border-gray-70;
+    }
+  }
+
+  & [class~='rdt_Pagination'] {
+    border-top-color: $border-gray-70;
+  }
+
+  .empty {
+    padding: rem(24);
+  }
+
+  > div { 
+    height: auto;
+  }
+}

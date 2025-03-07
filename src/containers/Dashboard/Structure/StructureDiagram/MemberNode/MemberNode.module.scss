@@ -1,0 +1,82 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+@import '@/styles/placeholders';
+
+a[role="button"] {
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.container {
+  width: 256px;
+
+  .onSelect {
+    outline: 1px solid $background-yellow;
+  }
+
+  .titleContainer {
+    display: flex;
+    width: 256px;
+    background-color: $background-blue;
+    color: $text-white;
+
+    $horizontal-padding: 6px;
+
+    .titleInput {
+      flex: 1 1 auto;
+
+      padding: $horizontal-padding 8px;
+      border: none;
+      outline: none;
+
+      background-color: transparent;
+      font-size: rem(16);
+      color: inherit;
+
+      &::placeholder {
+        color: inherit;
+        opacity:0.5;
+      }
+
+      &:read-only {
+        cursor: move;
+      }
+    }
+
+    .titleButtonContainer {
+      margin: auto 0;
+
+      .fullscreenBodyButton {
+        padding-right: $horizontal-padding;
+      }
+    }
+  }
+
+  .body {
+    padding: 10px;
+    border: 1px solid $border-gray-70;
+    background-color: white;
+    font-size: rem(12);
+
+    .content {
+      font-weight: bold;
+    }
+
+    .name {
+      @include memberName;
+
+      .fullscreenBodyButton {
+        float: right;
+      }
+    }
+  }
+
+  .deleteButton {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+  }
+}

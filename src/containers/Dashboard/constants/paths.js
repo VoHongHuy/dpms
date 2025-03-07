@@ -1,0 +1,33 @@
+/* eslint-disable max-len */
+const PATHS = {
+  ROOT: '/dashboard',
+  HOME: '/dashboard/home',
+  RESULTS: '/dashboard/results',
+  MEMBERS: '/dashboard/members',
+  MEMBERS_ADD: '/dashboard/members/add',
+  MEMBERS_EDIT: '/dashboard/members/edit/:id',
+  STRUCTURE: '/dashboard/structure',
+  STRUCTURE_ROUTE: '/dashboard/structure/:positionX?/:positionY?',
+  ORGANIZATION: '/dashboard/organization',
+  USER_ACCOUNTS: '/dashboard/user-accounts',
+  USER_ACCOUNTS_ADD: '/dashboard/user-accounts/add',
+  USER_ACCOUNTS_EDIT: '/dashboard/user-accounts/edit/:id',
+  ROUTES_NOT_REGISTERED: '/dashboard/**',
+  TERRITORIAL_ORGANIZATION: '/dashboard/organization/territorial',
+  TERRITORIAL_ORGANIZATION_WITH_PARAMS: '/dashboard/organization/territorial/:county?/:municipality?/:settlement?/:district?',
+  ALLOCATE_MEMBER_TO_TERRITORIAL_UNIT_ROUTE: '/dashboard/organization/territorial-allocations/:county?/:municipality?/:settlement?/:district?',
+  ALLOCATE_MEMBER_TO_TERRITORIAL_UNIT: '/dashboard/organization/territorial-allocations',
+  PARLIAMENTARY_ELECTION: '/dashboard/organization/parliamentary',
+  PARLIAMENTARY_ELECTION_ROUTE: '/dashboard/organization/parliamentary/:electionUnit?/:electionRegion?/:pollingStation?',
+  ALLOCATE_MEMBER_TO_PARLIAMENTARY_UNIT_ROUTE: '/dashboard/organization/parliamentary-allocations/:electionUnit?/:electionRegion?/:pollingStation?',
+  ALLOCATE_MEMBER_TO_PARLIAMENTARY_UNIT: '/dashboard/organization/parliamentary-allocations',
+  RESULT_ELECTIONS: '/dashboard/results/elections',
+  RESULT_ELECTIONS_ROUTE: '/dashboard/results/elections/:electionUnit?/:electionRegion?/:pollingStation?',
+  RESULT_COUNTIES: '/dashboard/results/counties',
+  RESULT_COUNTIES_ROUTE: '/dashboard/results/counties/:county?/:municipality?/:settlement?',
+  DUPLICATE_OIBS: '/dashboard/duplicate-oibs',
+  PAYMENTS: '/dashboard/payments',
+  BULK_EMAILS: '/dashboard/bulkEmails',
+};
+
+export default PATHS;

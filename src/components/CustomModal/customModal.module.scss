@@ -1,0 +1,30 @@
+@import '@/styles/variables';
+@import '@/styles/functions';
+
+.container {
+  .content {
+    padding: rem(32);
+    .description {
+      text-align: center;
+      font-size: rem(14);
+      color: $text-black;
+      margin-top: 0;
+      user-select: none;
+    }
+
+    .buttonGroups {
+      display: flex;
+      flex: none;
+      justify-content: center;
+
+      .button {
+        width: 100%;
+        max-width: rem(98);
+
+        & + .button {
+          margin-left: rem(18);
+        }
+      }
+    }
+  }
+}
